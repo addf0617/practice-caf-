@@ -1,0 +1,198 @@
+/*setup*/
+@import "./nav.css";
+:root {
+  --font-fam: "Noto Sans TC", sans-serif;
+  --color-white: rgb(255, 255, 255);
+  --bg-color: #212529;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  color: orange;
+}
+
+#coffee-carousel {
+  display: flex;
+  justify-content: center;
+}
+#coffee-carousel .carousel-inner {
+  margin: auto;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: var(--color-white);
+}
+body header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../img/pexels-pixabay-414555.svg);
+  background-size: cover;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+}
+body header .header-content-container {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header .header-content-container div {
+  display: flex;
+  align-items: center;
+}
+body header .header-content-container .header-content {
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+body header .header-content-container .header-content h1 {
+  margin-bottom: 2rem;
+  font-size: 4.5rem;
+}
+body header .header-content-container .header-content p {
+  padding: 1rem;
+  opacity: 0.75;
+  text-align: center;
+}
+body header .header-content-container .header-content .menu-button {
+  margin: 1rem 0;
+  padding: 0.4rem 1.5rem;
+  font-size: 1.25rem;
+  color: var(--color-white);
+  border: 2px solid #a98d64;
+  border-radius: 5%;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+body header .header-content-container .header-info {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body header .header-content-container .header-info .icon-container {
+  width: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+body header .header-content-container .header-info .icon-container a {
+  color: var(--color-white);
+}
+body header .header-content-container .header-info .location {
+  font-size: 1rem;
+  font-weight: normal;
+  align-items: center;
+}
+body header .header-content-container .header-info .location i {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+body header .header-content-container .header-info .location p {
+  margin: 0;
+}
+body main {
+  width: 100%;
+}
+body main .section-coffee {
+  padding: 5rem 0;
+}
+body main .section-coffee .coffee-img {
+  width: 100%;
+  max-width: 15rem;
+}
+body main .section-coffee .container-sm .row {
+  justify-content: center;
+  align-items: center;
+}
+body main .section-coffee .container-sm .row h3 {
+  margin-bottom: 1rem;
+}
+body main .section-menu {
+  padding: 1rem;
+}
+body main .section-menu .row img {
+  width: 40vw;
+}
+body main .section-reservation {
+  margin: 3rem 0;
+}
+body main .section-reservation p {
+  opacity: 0.65;
+}
+body main .section-reservation form button {
+  padding: 0.5rem 1.5rem;
+  color: var(--color-white);
+  border-color: orange;
+}
+body main .section-reservation form button:hover {
+  background-color: orange;
+}
+body footer {
+  width: 100%;
+}
+body footer h5 {
+  color: orange;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+body footer p {
+  opacity: 0.65;
+}
+body footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+body footer ul li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+body footer ul li i {
+  padding-right: 0.5rem;
+}
+body footer ul li p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body main .section-menu .row img {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  body header .header-content-container .header-content h1 {
+    font-size: 3.75rem;
+  }
+  body .section-coffee .carousel-inner .col-sm-7 {
+    text-align: center;
+  }
+  body .section-coffee .carousel-inner .col-sm-3 {
+    display: flex;
+    justify-content: center;
+  }
+  body .coffee-img {
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
